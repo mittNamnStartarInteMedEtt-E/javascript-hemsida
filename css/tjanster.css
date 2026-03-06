@@ -1,0 +1,130 @@
+body {
+    background-color: #FCF5EE;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "Times New Roman", Times, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-right: 30px;
+}
+
+p {
+    font-size: large;
+    color: black;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.container ul {
+    flex: 1;
+    padding-left: 25px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.bild {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    order: 2; /* på desktop: bild till höger */
+}
+
+
+
+/* Separator */
+.separator {
+    background-color: rgb(36, 0, 0);
+    width: 95%;
+    height: 3px;
+    margin: 40px auto;
+}
+
+/* Navbar */
+nav {
+    height: 78px;
+    max-height: 78px;
+}
+
+nav ul {
+    display: flex;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #850E35;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+}
+
+ul li a {
+    display: flex;
+    padding: 16px 14px;
+    justify-content: center;
+    align-items: center;
+    color: #FCF5EE;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #640a28;
+}
+
+.nav-separator {
+    background-color: #6d0c2c;
+    height: 30px;
+    width: 2px;
+    margin: 0 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #850E35;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+    }
+    h1 {
+        margin-top: 175px;
+    }
+    .nav-separator {
+        width: 30px;
+        height: 2px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,139 @@
+/*** huvudinnehåll ***/
+
+body {
+    background-color: #FCF5EE;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "Times New Roman", Times, serif;
+    overflow-x: hidden; /* kan inte scrolla horizontalt */
+    overflow-y: auto;
+}
+
+#main-content {
+    display: block;
+    margin: 30px;
+}
+
+#container {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 30px auto;
+    font-weight: 500;
+    animation-name: start;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+p {
+    font-size: large;
+    color: black;
+    margin-right: 30px;
+}
+
+.bild {
+    max-width: 500px;
+    max-height: 250px;
+    float: right;
+}
+
+.separator {
+    background-color: rgb(36, 0, 0);
+    width: 95%;
+    margin: auto auto;
+    height: 3px;
+}
+
+/*** navbar ***/
+nav {
+    height: 78px;
+    max-height: 78px;
+
+}
+
+nav ul {
+    display: flex;
+    position: fixed; /* fast navbar, stannar på skärmen */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #850E35;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        position: sticky; /* ej fast navbar, stannar inte på skärmen */
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+    }
+    .nav-separator {
+        width: 30px;
+        height: 2px;
+    }
+    #main-content {
+        margin-top: 200px;
+    }
+    .bild {
+        position: absolute;
+        filter: opacity(0);
+    }
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: flex;
+    padding: 16px 14px;
+    justify-content: center;
+    align-items: center;
+    color: #FCF5EE;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #640a28;
+}
+
+.nav-seperator {
+    background-color: #6d0c2c;
+    height: 30px;
+    width: 2px;
+    margin: 0 5px;
+}
+
+/*** footer ***/
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    background-color: #850E35;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+}

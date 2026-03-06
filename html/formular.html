@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformulär – Arnes Grävtjänst</title>
+    <link rel="stylesheet" href="/css/formular.css">
+
+    <!-- google font importering -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="/"><img src="/bilder/arnes-logga.png" alt="logga"></a></li>
+            <div class="nav-separator"></div>
+            <li><a href="/html/om.html">Om oss</a></li>
+            <div class="nav-separator"></div>
+            <li><a href="/html/kontakt.html">Kontakt</a></li>
+            <div class="nav-separator"></div>
+            <li><a href="/html/tjanster.html">Beställ</a></li>
+        </ul>
+    </nav>
+    <!-- slut navbar -->
+
+    <!-- start huvudinnehåll-->
+    <div id="main-content">
+
+        <h1>Kontaktformulär</h1>
+        <p>Fyll i dina uppgifter och välj vad du vill göra. Vi återkommer så snart som möjligt.</p>
+
+        <form>
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" placeholder="Billy Svensson">
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" placeholder="billy.svensson@example.com">
+
+            <label for="service">Vad vill du göra?</label>
+            <select id="service" name="service">
+                <option value="">Välj ett alternativ</option>
+                <option value="gravhjalp">Jag vill hyra grävhjälp</option>
+                <option value="maskiner">Jag vill hyra maskiner</option>
+                <option value="annat">Annat</option>
+            </select>
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+
+    </div>
+
+    <footer>© Arnes Grävtjänst 2026</footer>
+
+</body>
+</html>
