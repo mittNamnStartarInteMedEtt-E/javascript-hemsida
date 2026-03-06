@@ -104,10 +104,11 @@ loop();
 spawnButton.addEventListener("click", spawnFlies)
 
 function spawnFlies() {
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 10000; i++) {
         particles.push(new Particle(
             Math.random() * canvas.width,
             Math.random() * canvas.height
         ));
     }
+
 }
